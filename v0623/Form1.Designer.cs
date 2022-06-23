@@ -38,11 +38,12 @@ namespace v0623
             // 
             // label1
             // 
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(383, 131);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 19);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "★";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // timer1
@@ -65,9 +66,9 @@ namespace v0623
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(519, 104);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 30);
+            this.label3.Size = new System.Drawing.Size(67, 30);
             this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.label3.Text = "(・ω・)";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
