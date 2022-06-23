@@ -28,34 +28,44 @@ namespace v0623
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            Point spos = MousePosition;
+            Point fpos = PointToClient(spos);
+            label3.Left = fpos.X-label3.Width/2;
+            label3.Top = fpos.Y-label3.Height/2;
+            label3.Text = $"{fpos.Y},{fpos.Y}";
+
             label1.Left += vx;
             label1.Top += vy;
 
             if (label1.Left < 0)
             {
-                vx = 10;
+                vx =Math.Abs(vx)*110/100;
             }
 
             if (label1.Top < 0)
             {
-                vy = 10;
+                vy =Math.Abs(vy) * 110 / 100;
             }
 
 
             if (label1.Right > ClientSize.Width)
             {
-                vx = -10;
+                vx =-Math.Abs(vx) * 110 / 100;
             }
             
             if (label1.Bottom > ClientSize.Height)
             {
-                vy = -10;
+                vy =-Math.Abs(vy) * 110 / 100;
             }
 
             Score--;
             label2.Text = $"SCORE{Score}";
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
