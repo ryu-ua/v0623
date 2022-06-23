@@ -14,7 +14,7 @@ namespace v0623
     {
         int vx = -10;
         int vy = -10;
-
+        int Score = 100;
         public Form1()
         {
             InitializeComponent();
@@ -22,8 +22,8 @@ namespace v0623
 
         private void label1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("荒川 龍");
-            timer1.Enabled=false;
+           timer1.Enabled=false;
+            MessageBox.Show("荒川 龍"); 
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -51,6 +51,9 @@ namespace v0623
             {
                 vy = -10;
             }
+
+            Score--;
+            label2.Text = $"SCORE{Score}";
         }
 
     }
