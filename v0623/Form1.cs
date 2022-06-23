@@ -23,8 +23,7 @@ namespace v0623
         private void label1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("荒川 龍");
-            
-            
+            timer1.Enabled=false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
